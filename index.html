@@ -16,6 +16,30 @@
       padding: 30px;
       background-color: #fff;
       }
+      img {
+      margin-left: auto;
+      margin-right: auto;
+      }
+      #usar-row p {
+      margin-top: 10px;
+      }
+      @media (min-width: 1200px) {
+      #usar-row p {
+      height: 70px;
+      }}
+      @media (min-width: 992px) and (max-width: 1199px) {
+      #usar-row p {
+      height: 90px;
+      }}
+      @media (min-width: 768px) and (max-width: 991px) {
+      #usar-row p {
+      margin-top: 20px;
+      height: 40px;
+      }}
+      #equipo-row img {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      }
    </style>
   </head>
   <body>
@@ -48,8 +72,9 @@
     <div class="jumbotron">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <h1>AimSat MX</h1>
+          <div class="col-md-6 col-sm-8">
+            <h1 class="hidden-xs">AimSat MX</h1>
+            <img class="visible-xs img-responsive" src="img/logo.png">
             <p>Es una aplicación para smartphones que mediante sonidos
               te ayuda en apuntar una antena direccional a satélites en
               orbita baja y así recibir sus transmisiones de datos.</p>
@@ -64,9 +89,8 @@
             <p><a href="#equipo" 
                   class="btn btn-info">Equipo del proyecto</a></p>
           </div>
-          <div class="col-md-6">
-            <img class="img-responsive" src="img/logo.png"
-                 style="margin: 0 auto;">
+          <div class="col-md-6 col-sm-4">
+            <img class="hidden-xs img-responsive" src="img/logo.png">
           </div>
         </div>
       </div>
@@ -79,47 +103,31 @@
           <h2>Como usar AimSat MX</h2>
         </div>
       </div>
-      <div class="row" style="margin-top: 20px;">
-        <div class="col-md-2 col-md-offset-1">
+      <div class="row" id="usar-row">
+        <div class="col-sm-6 col-md-2 col-md-offset-1">
           <p class="text-center"><strong>Abre AimSat MX en tu
               smartphone</strong></p>
+          <img class="img-responsive" src="img/1.png">
         </div>
-        <div class="col-md-2">
+        <div class="col-sm-6 col-md-2">
           <p class="text-center"><strong>Elige un satélite para ver
               las oportunidades de escucharlo</strong></p>
+          <img class="img-responsive" src="img/2.png">
         </div>
-        <div class="col-md-2">
+        <div class="col-sm-6 col-md-2">
           <p class="text-center"><strong>Elige el sobrevuelo del
               satélite que quieres escuchar</strong></p>
+          <img class="img-responsive" src="img/3.png">
         </div>
-        <div class="col-md-2">
+        <div class="col-sm-6 col-md-2">
           <p class="text-center"><strong>Puedes ver donde aparecerá el
               satélite y un link a su página web</strong></p>
+          <img class="img-responsive" src="img/4.png">
         </div>
-        <div class="col-md-2">
+        <div class="col-sm-12 col-md-2">
           <p class="text-center"><strong>Sigue las instrucciones
               audibles para apuntar tu antena</strong></p>
-        </div>
-      <div class="row">
-        <div class="col-md-2 col-md-offset-1">
-          <img class="img-responsive" src="img/1.png"
-               style="margin: 0 auto;">
-        </div>
-        <div class="col-md-2">
-          <img class="img-responsive" src="img/2.png"
-               style="margin: 0 auto;">
-        </div>
-        <div class="col-md-2">
-          <img class="img-responsive" src="img/3.png"
-               style="margin: 0 auto;">
-        </div>
-        <div class="col-md-2">
-          <img class="img-responsive" src="img/4.png"
-               style="margin: 0 auto;">
-        </div>
-        <div class="col-md-2">
-          <img class="img-responsive" src="img/5.png"
-               style="margin: 0 auto;">
+          <img class="img-responsive" src="img/5.png">
         </div>
       </div>
     </div>
@@ -154,8 +162,7 @@
             tierra.</p>
         </div>
         <div class="col-md-6">
-          <img class="img-responsive" src="img/tracking.png"
-               style="margin: 0 auto;">
+          <img class="img-responsive" src="img/tracking.png">
         </div>
       </div>
       <div class="row">
@@ -179,8 +186,7 @@
             elijas.</p>
         </div>
         <div class="col-md-6">
-          <img class="img-responsive" src="img/antena.jpg"
-               style="margin: 0 auto;">
+          <img class="img-responsive" src="img/antena.jpg">
         </div>
       </div>
       <div class="row">
@@ -200,8 +206,7 @@
             chipset <a href="http://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/">RTL2832U</a>.</p>
         </div>
         <div class="col-md-6">
-          <img class="img-responsive" src="img/funcube.jpg"
-               style="margin: 0 auto;">
+          <img class="img-responsive" src="img/funcube.jpg">
         </div>
       </div>
       <div class="row">
@@ -228,8 +233,7 @@
             decodificación de datos.</p>
       </div>
         <div class="col-md-6">
-          <img class="img-responsive" src="img/dashboard.jpg"
-               style="margin: 0 auto;">
+          <img class="img-responsive" src="img/dashboard.jpg">
         </div>
       </div>
     </div>
@@ -321,26 +325,31 @@
           <h2>Equipo del proyecto</h2>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-2 col-md-offset-1">
-          <p class="text-center"><strong>Carlos Castellanos</strong></p>
-          <p class="text-center"><a href="https://twitter.com/rockarloz">@rockarloz</a></p>
+      <div class="row" id="equipo-row">
+        <div class="col-md-2 col-xs-12 col-md-offset-1">
+          <img class="img-responsive" src="img/corina.jpg">
+          <p class="text-center"><strong>Corina Olicon</strong><br/>
+          <a href="https://twitter.com/c0rysi">@c0rysi</a></p>
         </div>
-        <div class="col-md-2">
-          <p class="text-center"><strong>Corina Olicon</strong></p>
-          <p class="text-center"><a href="https://twitter.com/c0rysi">@c0rysi</a></p>
+        <div class="col-md-2 col-xs-6">
+          <img class="img-responsive" src="img/carlos.jpg">
+          <p class="text-center"><strong>Carlos Castellanos</strong><br/>
+          <a href="https://twitter.com/rockarloz">@rockarloz</a></p>
         </div>
-        <div class="col-md-2">
-          <p class="text-center"><strong>Galileo Teco</strong></p>
-          <p class="text-center"><a href="https://twitter.com/genitalico">@genitalico</a></p>
+        <div class="col-md-2 col-xs-6">
+          <img class="img-responsive" src="img/galileo.jpg">
+          <p class="text-center"><strong>Galileo Teco</strong><br/>
+          <a href="https://twitter.com/genitalico">@genitalico</a></p>
         </div>
-        <div class="col-md-2">
-          <p class="text-center"><strong>Juan Carlos Sanchez</strong></p>
-          <p class="text-center"><a href="https://twitter.com/juancar1os">@juancar1os</a></p>
+        <div class="col-md-2 col-xs-6">
+          <img class="img-responsive" src="img/juan.png">
+          <p class="text-center"><strong>Juan Carlos Sanchez</strong><br/>
+          <a href="https://twitter.com/juancar1os">@juancar1os</a></p>
         </div>
-        <div class="col-md-2">
-          <p class="text-center"><strong>Manuel Rabade</strong></p>
-          <p class="text-center"><a href="https://twitter.com/manuelrabade">@manuelrabade</a></p>
+        <div class="col-md-2 col-xs-6">
+          <img class="img-responsive" src="img/manuel.jpg">
+          <p class="text-center"><strong>Manuel Rabade</strong><br/>
+          <a href="https://twitter.com/manuelrabade">@manuelrabade</a></p>
         </div>
       </div>
       <!-- footer -->
